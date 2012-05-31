@@ -1,8 +1,8 @@
-﻿namespace Disqussing.Entities
+﻿namespace Disqussing
 {
 	using Newtonsoft.Json;
 
-	public class Favicon : Entity
+	public class ImageReference : Entity
 	{
 		private string permalink;
 		[JsonProperty("permalink")]

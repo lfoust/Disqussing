@@ -1,5 +1,6 @@
 ﻿namespace Disqussing
 {
+	using System;
 	using Newtonsoft.Json;
 
 	public class Thread : Entity

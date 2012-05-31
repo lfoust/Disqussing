@@ -28,9 +28,9 @@
 			set { founder = value; NotifyOfPropertyChange(() => Founder); }
 		}
 
-		private Favicon favicon;
+		private ImageReference favicon;
 		[JsonProperty("favicon")]
-		public Favicon Favicon
+		public ImageReference Favicon
 		{
 			get { return favicon; }
 			set { favicon = value; NotifyOfPropertyChange(() => Favicon); }
