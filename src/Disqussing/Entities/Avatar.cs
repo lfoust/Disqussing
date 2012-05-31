@@ -1,4 +1,4 @@
-﻿namespace Disqussing.Entities
+﻿namespace Disqussing
 {
 	using Newtonsoft.Json;
 
