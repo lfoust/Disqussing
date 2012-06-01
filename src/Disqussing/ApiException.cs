@@ -18,5 +18,10 @@ namespace Disqussing
             : base(innerException.Message, innerException)
         {
         }
+
+		public ApiException(string message)
+			: base(message)
+		{
+		}
     }
 }

@@ -5,7 +5,13 @@ namespace Disqussing
 {
     public interface IUrlClient
     {
-        HttpResponse MakeRequest(Uri url);
+        HttpResponse MakeRequest(Uri url, HttpMethod method = HttpMethod.GET);
     }
+
+	public enum HttpMethod
+	{
+		GET,
+		POST
+	}
 }
 #endif

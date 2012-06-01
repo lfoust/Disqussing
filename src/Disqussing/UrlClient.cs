@@ -6,7 +6,7 @@ namespace Disqussing
 {
     public class UrlClient : IUrlClient
     {
-        public HttpResponse MakeRequest(Uri url)
+        public HttpResponse MakeRequest(Uri url, HttpMethod method = HttpMethod.GET)
         {
             HttpResponse httpResponse = new HttpResponse
             {
@@ -16,8 +16,7 @@ namespace Disqussing
             if (request != null)
             {
                 request.UserAgent = "Disqussing";
-                //request.Accept = "gzip,deflate";
-                //request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+				request.Method = method.ToString();
                 try
                 {
                     using (var response = request.GetResponse() as HttpWebResponse)

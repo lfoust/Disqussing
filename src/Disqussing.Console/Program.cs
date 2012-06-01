@@ -44,7 +44,8 @@
 
 		public void Start()
 		{
-			var user = Client.GetUser("lfoust");
+			//var user = Client.GetUser("lfoust");
+			var user = Client.GetUser(91126);
 			Console.WriteLine(user.Name);
 		}
 	}
